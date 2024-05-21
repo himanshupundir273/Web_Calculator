@@ -1,0 +1,107 @@
+body{
+    font-family : 'open sans',sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.top_h{
+    margin: 10px;
+    background-color: #18a9de;
+    border-radius: 20px;
+}
+.h_t{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 20px #18a9de;
+    border-radius: 30px;
+
+}
+#container{
+    width: 1000px;
+    height: 550px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    margin: 100px auto;
+    padding-top: 100px;
+    border-radius: 20px;
+}
+#calculator{
+    width: 320px;
+    height:520px;
+    background-color:#eaedef;
+    top:20px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 30px #000;
+}
+#result{
+    height: 120px;
+}
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+#keyboard{
+    height: 400px; 
+}
+.operator, .number{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    float: left;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #18a9de;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #18a9de;
+}
+.number, .empty{
+
+    box-shadow: 0 0 5px #c3eaff;
+    background-color: #c3eaff;
+}
+.number, .operator{
+    cursor: pointer; 
+}
+
+.operator:active, .number:active{
+    font-size: 13px;
+}
+/* psudo class */
+.operator:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+button:nth-child(8){
+    font-size: 20px;
+    background-color: #f6d012;
+}
+button:nth-child(12){
+    font-size: 20px;
+    background-color: #c94fe87d;
+}
+button:nth-child(16){
+    font-size: 20px;
+    background-color: #1be6c4;
+}
+button:nth-child(19){
+    font-size: 20px;
+    background-color: #adf9e7;
+    width: 140px;
+    border-radius: 45px;
+}
+button:hover{
+    transform: scale(1.15);
+}
